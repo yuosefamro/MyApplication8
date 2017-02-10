@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <EditText
+        android:ems="10"
+        android:hint="@string/enter_gmail_id"
+        android:id="@+id/et_to"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:ems="10"
+        android:hint="@string/enter_subject"
+        android:id="@+id/et_sub"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:selectAllOnFocus="true"
+        android:maxLines="1" />
+
+    <EditText
+        android:ems="10"
+        android:hint=" Message text"
+        android:id="@+id/et_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPostalAddress"
+        tools:ignore="HardcodedText"
+        android:selectAllOnFocus="true" />
+
+    <Button
+        android:id="@+id/btn_submit"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dip"
+        android:layout_width="match_parent"
+        android:text="Send Mail"
+        tools:ignore="HardcodedText,InefficientWeight"
+        android:elevation="24dp"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+        tools:targetApi="lollipop"
+        android:background="@android:drawable/sym_action_email"
+        android:layout_weight="0.04" />
+
+</LinearLayout>

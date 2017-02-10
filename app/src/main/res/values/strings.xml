@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="enter_subject">Enter Subject</string>
+    <string name="enter_gmail_id">Enter gmail-id</string>
+</resources>
